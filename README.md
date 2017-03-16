@@ -48,9 +48,12 @@ compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.0'
 設定最下面的工具列，可以利用:
 
 bottomNavigationBar
-            .addItem(new BottomNavigationItem(R.drawable.ic_place_black_24dp, "Place").setBadgeItem(badgeItem))
-            .addItem(new BottomNavigationItem(R.drawable.ic_person_pin_circle_black_24dp, "PersonPlace"))
-            .addItem(new BottomNavigationItem(R.drawable.ic_ondemand_video_black_24dp, "Video"))
+            .addItem
+            (new BottomNavigationItem(R.drawable.ic_place_black_24dp, "Place").setBadgeItem(badgeItem))
+            .addItem
+            (new BottomNavigationItem(R.drawable.ic_person_pin_circle_black_24dp, "PersonPlace"))
+            .addItem
+            (new BottomNavigationItem(R.drawable.ic_ondemand_video_black_24dp, "Video"))
             .initialise();
                 
 新增你下面的工具列選項，後面的setBadgeItem(badgeItem)是可以設定像是通知的樣子浮印在上面，要先在前面先設定:
