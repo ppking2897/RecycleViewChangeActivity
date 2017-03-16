@@ -19,6 +19,7 @@ toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener(){
                 return false;
             }
         });
+        
 這邊的menuItem Item則是會判斷你按下三條線時，所出現的選單是按哪一個名稱，再利用switch判斷是按下哪一個,三條線內的選單由menu.xml內設定
 
 <item
@@ -36,8 +37,7 @@ compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.0'
 
 設定最下面的工具列，可以利用:
 
-bottomNavigationBar
-                .addItem(new BottomNavigationItem(R.drawable.ic_place_black_24dp, "Place").setBadgeItem(badgeItem))
+bottomNavigationBar.addItem(new BottomNavigationItem(R.drawable.ic_place_black_24dp, "Place").setBadgeItem(badgeItem))
                 .addItem(new BottomNavigationItem(R.drawable.ic_person_pin_circle_black_24dp, "PersonPlace"))
                 .addItem(new BottomNavigationItem(R.drawable.ic_ondemand_video_black_24dp, "Video"))
                 .initialise();
@@ -49,6 +49,7 @@ BadgeItem badgeItem = new BadgeItem().setBorderWidth(1).setBackgroundColor(Color
 若要設定按下去的監聽事件，先設定:
 
 //bottombar觸發按鍵事件，並依照按下的position進入不同的fragment畫面呈現
+
         bottomNavigationBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position) {
