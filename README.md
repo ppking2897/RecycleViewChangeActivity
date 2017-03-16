@@ -127,7 +127,7 @@ class ViewHolder extends RecyclerView.ViewHolder{
     
 Adapter所要override的方法為:
 
-public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //-------先定義一個view你要讓這Adapter要放上去的地方，再將這view定義成ViewHolder再return----
         View view = LayoutInflater.from(context).inflate(R.layout.place_recycleview,parent,false); 
