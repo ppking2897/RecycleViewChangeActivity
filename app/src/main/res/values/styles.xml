@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2e8abb</item> <!--浅藍色-->
+        <item name="colorPrimaryDark">#3A5FCD</item> <!--深藍色-->
+        <item name="android:textColorSecondary">#ffffff</item> <!--對應最右邊三點的顏色-->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- enable overlap of transitions -->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+    <!--name 由自己取 parene是取樣式  為三點按下去後的字顏色-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item><!--新增item，控制menu-->
+
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--false即可使menu位置toolbar之下-->
+    </style>
+
+
+
+</resources>
