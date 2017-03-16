@@ -7,6 +7,7 @@
 若要設定按下去時出現選單，設定
 
 toolbar = (Toolbar)findViewById(R.id.toolBar);
+
 toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener(){
             @Override
             public boolean onMenuItemClick(MenuItem item) {
