@@ -112,16 +112,16 @@ compile 'com.android.support:recyclerview-v7:25.1.1'
 
 後面<Place_Adapter.ViewHolder>的意思是我要將這Adapter內的ViewHolder，依照我的方式去重新定義
 
-class ViewHolder extends RecyclerView.ViewHolder{
-        TextView textView;
+            class ViewHolder extends RecyclerView.ViewHolder{
+                    TextView textView;
 
-        public ViewHolder(View itemView) {
-            super(itemView);
-            textView = (TextView)itemView.findViewById(R.id.place_weather_Text);
-        }
-    }
+                    public ViewHolder(View itemView) {
+                        super(itemView);
+                        textView = (TextView)itemView.findViewById(R.id.place_weather_Text);
+                    }
+                }
     
-    主要是將ViewHolder內新增一個我想要放入的view，之後可以在holder內找到我所定義的view名稱
+主要是將ViewHolder內新增一個我想要放入的view，之後可以在holder內找到我所定義的view名稱
     
     
     
