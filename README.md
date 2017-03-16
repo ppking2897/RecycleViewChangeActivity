@@ -28,11 +28,17 @@ toolbar.setOnMenuItemClickListener(
 
 <item
         android:id="@+id/setting"
-        android:title="@string/setting"             
+        
+        android:title="@string/setting"       
+        
         android:orderInCategory="1"               //設定菜單順序
+        
         android:icon="@drawable/ic_menu_black_24dp" //設定圖案
+        
         app:showAsAction="never"                  //設定是否顯示
+        
         >
+        
 </item>
 
 #  BottomNavigationBar底部的菜單
