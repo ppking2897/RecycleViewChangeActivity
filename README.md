@@ -191,6 +191,7 @@ public void onBindViewHolder(ViewHolder holder, int position) {
   String transitionName = "transitionNorthLocation";
   
   ActivityOptions transitionActivityOptions =
+  
   ActivityOptions.makeSceneTransitionAnimation((MainActivity)context , textView , transitionName);
   
   context.startActivity(it ,transitionActivityOptions.toBundle());
