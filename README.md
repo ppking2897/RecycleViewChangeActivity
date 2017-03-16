@@ -8,7 +8,10 @@
 
 toolbar = (Toolbar)findViewById(R.id.toolBar);
 
-toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener(){
+
+toolbar.setOnMenuItemClickListener(
+            new Toolbar.OnMenuItemClickListener(){
+            
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
