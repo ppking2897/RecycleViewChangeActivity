@@ -189,8 +189,11 @@ public void onBindViewHolder(ViewHolder holder, int position) {
 之後在recycleview內按下的監聽事件下:        
 
   String transitionName = "transitionNorthLocation";
+  
   ActivityOptions transitionActivityOptions =
+  
                          ActivityOptions.makeSceneTransitionAnimation((MainActivity)context , textView , transitionName);
+                         
   context.startActivity(it ,transitionActivityOptions.toBundle());
 
 裡面的textview是要跳轉時跟著跳轉的view物件，此物件要設定時，必須要設定同樣的id以及transitionName，
