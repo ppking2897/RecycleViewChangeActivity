@@ -6,10 +6,10 @@
 
 若要設定按下去時出現選單，設定
 
-toolbar = (Toolbar)findViewById(R.id.toolBar);
+            toolbar = (Toolbar)findViewById(R.id.toolBar);
 
 
-toolbar.setOnMenuItemClickListener(
+            toolbar.setOnMenuItemClickListener(
             new Toolbar.OnMenuItemClickListener(){
             
             @Override
@@ -63,7 +63,7 @@ BadgeItem badgeItem = new BadgeItem().setBorderWidth(1).setBackgroundColor(Color
 
 若要設定按下去的監聽事件，先設定:
 
-//bottombar觸發按鍵事件，並依照按下的position進入不同的fragment畫面呈現
+            //bottombar觸發按鍵事件，並依照按下的position進入不同的fragment畫面呈現
 
         bottomNavigationBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
             @Override
